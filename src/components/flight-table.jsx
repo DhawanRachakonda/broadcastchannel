@@ -14,7 +14,7 @@ function FlightsDetails({ flights }) {
       <tbody>
         {flights &&
           flights.map(record => (
-            <tr key={record.name}>
+            <tr key={record.name} className="flight-record">
               <td>{record.name}</td>
               <td>{record.fleetCount}</td>
             </tr>

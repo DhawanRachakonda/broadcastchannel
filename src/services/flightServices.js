@@ -6,6 +6,7 @@ class FlightServices {
    * @returns {Promise}
    */
   static getFlights() {
+    console.warn('Hitting real service');
     return API.getRequest(`${domainName + '/api/getFlights?db=ruby'}`);
   }
   /**
@@ -13,6 +14,7 @@ class FlightServices {
    * @returns {Promise}
    */
   static addFlight(data) {
+    console.warn('Hitting real service');
     return API.postRequest(`${domainName + '/api/flight?db=ruby'}`, data);
   }
 }
