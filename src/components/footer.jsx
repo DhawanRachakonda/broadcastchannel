@@ -1,7 +1,9 @@
 import React from 'react';
 
 function Footer() {
-  return <h4>footer</h4>;
+    return (
+        <footer> Dhawan Rachakonda</footer>
+    );
 }
 
 export default Footer;
